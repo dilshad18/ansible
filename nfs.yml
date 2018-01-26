@@ -1,0 +1,7 @@
+---
+ - hosts: dilshad-VirtualBox
+   tasks:
+   - name: installing nfs on ubuntu
+     apt: name=nfs-kernel-server state=latest
+   - name: starting nfs on unbutu
+     service: name=nfs-kernel-server state=started enabled=yes
